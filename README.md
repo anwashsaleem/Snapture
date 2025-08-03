@@ -1,7 +1,7 @@
 # Snapture v0.1.0
 
 In this version, I use a simple OCR method to extract text from images.
-The goal is to organize screenshots by creating albums based on the text inside the images.
+The goal was to organize screenshots by creating albums based on the text inside the images.
 The OCR reads images from the 'Screenshots' folder and saves text files in the 'TXTs' folder.
 
 But, this has limitations like:
