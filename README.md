@@ -1,13 +1,26 @@
-# Snapture v0.1.0
+# Snapture v0.2.0
 
-In this version, I use a simple OCR method to extract text from images.
-The goal was to organize screenshots by creating albums based on the text inside the images.
-The OCR reads images from the 'Screenshots' folder and saves text files in the 'TXTs' folder.
+In this version, I replaced the basic local OCR with AI-based captioning using the OpenRouter API. Now it can handle blurry or text-less screenshots better than traditional OCR and also automatically generates short, meaningful titles and concise descriptions.
 
-But, this has limitations like:
-- If the screenshot image does not contain any text, the text file will be empty.
-- Images with unclear text or blur images produce meaningless text.
-- Tesseract OCR must be installed locally for this to work.
-- There is no user interface or tagging system yet.
 
-This version is the starting point for smarter screenshot organization tool, Snapture.
+But this has limitations like:
+
+- Requires an OpenRouter API key (sign up at openrouter.ai).
+- API usage limits may restrict the number of processed images.
+- No screenshot categorization, UI, or tagging features yet.
+
+
+How to use it:
+
+1. Place screenshots in the Screenshots folder.
+2. Add your OpenRouter API key, model ID, and API URL in the script.
+3. Run the script, which will create .txt files with AI-generated titles and descriptions in the TXTs folder.
+
+
+This version is good for smarter screenshot captioning but need more to be "Snapture".
+
+
+
+
+
+
