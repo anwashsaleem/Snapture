@@ -1,6 +1,6 @@
 # Snapture v0.2.0
 
-In this version, I replaced the basic local OCR with AI-based captioning using the OpenRouter API. Now it can handle blurry or text-less screenshots better than traditional OCR and also automatically generates short, meaningful titles and concise descriptions.
+In this version, I replaced the basic local OCR with **AI-based** captioning using the `OpenRouter API`. Now it can handle blurry or text-less screenshots better than traditional OCR and also automatically generates short, meaningful titles and concise descriptions.
 
 
 But this has limitations like:
@@ -12,9 +12,9 @@ But this has limitations like:
 
 How to use it:
 
-1. Place screenshots in the Screenshots folder.
+1. Place screenshots in the `Screenshots` folder.
 2. Add your OpenRouter API key, model ID, and API URL in the script.
-3. Run the script, which will create .txt files with AI-generated titles and descriptions in the TXTs folder.
+3. Run the script, which will create .txt files with AI-generated titles and descriptions in the `TXTs` folder.
 
 
 This version is good for smarter screenshot captioning but need more to be "Snapture".
