@@ -1,26 +1,35 @@
-# Snapture v0.2.0
+# Snapture v0.3.0
 
-In this version, I replaced the basic local OCR with **AI-based** captioning using the `OpenRouter API`. Now it can handle blurry or text-less screenshots better than traditional OCR and also automatically generates short, meaningful titles and concise descriptions.
+In this version, I added the ability to automatically create **albums** (folders) for your screenshots based on `predefined keywords`. Screenshots are assigned to albums using **AI**-generated titles and descriptions, and a visual similarity check ensures similar screenshots are grouped together.
 
 
-But this has limitations like:
 
-- Requires an OpenRouter API key (sign up at openrouter.ai).
-- API usage limits may restrict the number of processed images.
-- No screenshot categorization, UI, or tagging features yet.
+Improvements:
+
+- First version that automatically creates albums (folders).
+- Screenshots are assigned to albums based on `predefined keywords`.
+- Uses **AI-powered** captioning to generate titles & descriptions for screenshots.
+- Adds visual similarity check for organizing screenshots.
+
+
+
+But this one also has limitations like:
+
+- Accuracy is limited — keyword-based matching may misclassify screenshots.
+- Screenshots without clear matches go into Uncategorized.
+- No UI or tagging features yet.
+
 
 
 How to use it:
 
 1. Place screenshots in the `Screenshots` folder.
-2. Add your OpenRouter API key, model ID, and API URL in the script.
-3. Run the script, which will create .txt files with AI-generated titles and descriptions in the `TXTs` folder.
+2. Add your `API key` & endpoint in the script.
+3. Define your *album categories* & *keywords* in `keyword_categories`.
+4. Run the script — it will create `.txt` files and organize screenshots into folders.
 
 
-This version is good for smarter screenshot captioning but need more to be "Snapture".
-
-
-
+This version is the one step close to an **AI-powered** screenshot organizer, but there’s still more to make it fully “Snapture”.
 
 
 
