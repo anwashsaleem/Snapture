@@ -11,7 +11,7 @@ This version is closest one to the **Snapture** concept, It has the main logic o
 - Introduces a `threshold value` to control clustering strictness:
   - **Lower threshold:** broader grouping, `fewer albums`.
   - **Higher threshold:** stricter grouping, `more albums`.
-
+ 
 <br>
 
 ## Limitations:
