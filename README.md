@@ -1,37 +1,46 @@
-# Snapture v0.3.1
+# Snapture v0.4.0
 
-This version is closest one to the **Snapture** concept, It has the main logic of automatically captioning & organizing screenshots. In this version, I added `clustering` logic that automatically groups screenshots into albums (folders) based on the similarity of their AI-generated titles and descriptions. Instead of relying only on *predefined keywords*, this version uses **text similarity** to detect related screenshots and place them together. <br><br>
+
+This version introduces the `first functional UI (GUI)` for **Snapture** along with `search support` and a `Run button` to process screenshots without manually running code. It builds on the previous logic of [Clustering-based Screenshot Organization](https://github.com/anwashsaleem/Snapture/releases/tag/v0.3.1) but now makes the workflow more interactive and user-friendly. <br><br>
 
 
 ## Improvements:
 
-- **AI-powered** captioning generates titles, descriptions, and tags for each screenshot.
-- Creates `.txt files` with metadata for every screenshot.
-- Uses `clustering` to automatically group related screenshots.
-- Introduces a `threshold value` to control clustering strictness:
-  - **Lower threshold:** broader grouping, `fewer albums`.
-  - **Higher threshold:** stricter grouping, `more albums`.
- 
+- Simple Python-based `GUI` added to view screenshots and albums.
+- Starts the captioning process directly from the UI by `Run button`.
+- The UI refreshes automatically to show progress in `real-time`.
+- Screenshots appear under `All Screenshots`, while clustered ones are shown under `Albums` (including any previously created albums).
+- Now, you can `search` screenshots and albums by text in titles, descriptions, or album names. 
 <br>
 
 ## Limitations:
 
+- Currently GUI is very basic and coded in **Python**. Works only on `desktop` (not mobile or app-based yet).
+- **Categorization** is still `file-based`. Metadata is saved in `.txt` files alongside screenshots (no database yet).
 - Captions depend entirely on the `AI API` response. The better the AI response, the better the `categorization` will be.
-- No UI or tagging search yet. Categorization is still `file-based` (no database yet).
 
 <br>
 
+
+
 ## How to use it:
 
-1. Place screenshots in the `Screenshots` folder.
-2. Add your own `API key` & endpoint in the script.
-3. **Run** the script, it will generate `.txt files` and organize screenshots into `albums`.
-4. Adjust the *`threshold`* to control whether you want broader categories or more precise albums. <br><br><br>
+1. Place your screenshots in the `Screenshots` folder.
+2. Add your own `API key` & `endpoint` in the script.
+3. `Run` the script. The GUI will open automatically and display:
+   -  All screenshots in the `Screenshots` section.
+   -  Existing albums (if already created) in the `Albums` section.
+4. Press the Run button to start captioning. The UI will:
+   -  Generate `.txt files` with titles, descriptions, and tags for each screenshot.
+   -  Update them in real time as screenshots are processed.
+   -  Group related screenshots into `albums` based on text similarity using clusting method.
+5. Adjust the *`threshold`* to control whether you want broader categories or more precise albums. <br><br><br>
+
+
 
 > [!TIP]
 > **Threshold Value**
 
 > The threshold value defines how similar two captions need to be in order to be grouped into the same folder. A lower threshold (e.g., 0.1–0.2) makes clustering more relaxed, so even loosely related screenshots may end up in the same group, resulting in broader categories. A higher threshold (e.g., 0.5–0.7) makes clustering stricter, so only very similar screenshots are grouped, leading to smaller and more precise folders. Adjusting this value lets you control whether you want broader grouping or tighter categorization.`
 
-<br><br><br> This version brings **Snapture** very close to the original idea: the screenshots are no longer just stored, but intelligently captioned and grouped. The logic for an `AI-powered` screenshot organizer is now in place, waiting to be expanded with a real interface and storage system to make it fully “Snapture”.
-
+<br><br><br> This version marks the first step toward a `usable interface`. Screenshots can now be browsed, searched, and organized in real time. The next milestone will be expanding **Snapture** into an `AI-powered mobile app` tool to make it truly accessible everywhere and taking it closer to the full vision of “Snapture”.
