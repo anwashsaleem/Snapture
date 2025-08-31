@@ -35,14 +35,16 @@ from tkinter import messagebox
 from tkinter import filedialog
 from PIL import Image, ImageTk, ImageDraw, ImageFilter
 
-
 from dotenv import load_dotenv
 load_dotenv()
+
 
 # Set your AI API key and URL here
 AI_API_KEY = os.getenv("AI_API_KEY")
 AI_BASE_URL = os.getenv("AI_BASE_URL")
 AI_URL = f"{AI_BASE_URL}key={AI_API_KEY}"
+
+
 
 
 # === Directories ===
