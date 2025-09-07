@@ -333,8 +333,8 @@ class SnaptureGUI:
         self.search_entry.bind("<FocusOut>", self._on_search_focus_out)
 
         # Load search icons
-        self.search_icon_img = ImageTk.PhotoImage(Image.open(os.path.join(base_directory, "search_icon.png")).resize((36, 36)))
-        self.search_icon_active_img = ImageTk.PhotoImage(Image.open(os.path.join(base_directory, "search_icon_active.png")).resize((36, 36)))
+        self.search_icon_img = ImageTk.PhotoImage(Image.open(os.path.join(base_directory, "Assets", "search_icon.png")).resize((36, 36)))
+        self.search_icon_active_img = ImageTk.PhotoImage(Image.open(os.path.join(base_directory, "Assets", "search_icon_active.png")).resize((36, 36)))
 
         # Create search icon button with image
         self.search_icon_button = tk.Button(
@@ -357,7 +357,7 @@ class SnaptureGUI:
         self.suggestion_box.bind("<Escape>", lambda e: self.suggestion_box.place_forget())
 
         # 2. Load the run button image
-        self.run_snapture_img = ImageTk.PhotoImage(Image.open(os.path.join(base_directory, "run_snapture.png")))
+        self.run_snapture_img = ImageTk.PhotoImage(Image.open(os.path.join(base_directory, "Assets", "run_snapture.png")))
 
         # 3. Create a label to display the image as a clickable icon
         self.play_button_label = tk.Label(
