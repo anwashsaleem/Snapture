@@ -1,4 +1,4 @@
-# Snapture Non-Commercial License v1.0
+# Snapture Non-Commercial License v2.0
 **Copyright (c) 2025 Anwash**
 
 ---
@@ -45,3 +45,4 @@ IN NO EVENT SHALL THE AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMA
 ---
 
 **License version 2.0 – September 2025**
+
