@@ -14,7 +14,7 @@ Working:
 - Minimal GUI added for viewing "All Screenshots" and "Albums".
 
 """
-
+ 
 
 
 import os
