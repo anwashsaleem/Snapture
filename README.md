@@ -44,3 +44,15 @@ This version introduces the `first functional UI (GUI)` for **Snapture** along w
 > The threshold value defines how similar two captions need to be in order to be grouped into the same folder. A lower threshold (e.g., 0.1–0.2) makes clustering more relaxed, so even loosely related screenshots may end up in the same group, resulting in broader categories. A higher threshold (e.g., 0.5–0.7) makes clustering stricter, so only very similar screenshots are grouped, leading to smaller and more precise folders. Adjusting this value lets you control whether you want broader grouping or tighter categorization.`
 
 <br><br><br> This version marks the first step toward a `usable interface`. Screenshots can now be browsed, searched, and organized in real time. The next milestone will be expanding **Snapture** into an `AI-powered mobile app` tool to make it truly accessible everywhere and taking it closer to the full vision of “Snapture”.
+
+<br><br>
+
+## Get Early Access to App Before Launch
+
+Be first in queue to experience Snapture before others. Join waitlist & secure your access.
+
+[Join Waitlist](https://anwash.framer.ai/snapture)
+
+
+
+ 
